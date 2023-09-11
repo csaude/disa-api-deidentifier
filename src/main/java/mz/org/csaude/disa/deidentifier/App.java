@@ -134,7 +134,7 @@ public class App {
     }
 
     private void deIdentifyPatients(List<String> nids) throws SQLException {
-        String sql = "UPDATE VlData SET FIRSTNAME=?, SURNAME=?, UNIQUEID=substring(sha1(trim(UNIQUEID)), 1, 31) WHERE UNIQUEID=?";
+        String sql = "UPDATE VlData SET FIRSTNAME=?, SURNAME=?, UNIQUEID=substring(sha1(trim(UNIQUEID)), 1, 21) WHERE UNIQUEID=?";
         try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
 
             for (String n : ProgressBar.wrap(nids, pbBuilder)) {
