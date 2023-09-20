@@ -7,7 +7,7 @@
 
   <groupId>mz.org.csaude.disa</groupId>
   <artifactId>disa-api-deidentifier</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
 
   <name>disa-api-de-identifier</name>
   <url>https://www.github.com/csaude</url>
